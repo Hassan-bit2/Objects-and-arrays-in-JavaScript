@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.nav{
+			/*background-color: black;*/
+			display: flex;
+			align-items: center;
+			position: sticky;
+			top: 0px;
+		}
+		.nav::before{
+		content: "";
+		background-color: black;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		opacity: 0.5;
+		}
+
+		.nav ul{
+			margin-top: 10px;
+		}
+
+		.nav li{
+			list-style: none;
+			margin: 6px 6px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: white;
+		}
+		.nav li a{
+			color: white;
+			text-decoration: none;
+		}
+		.nav li a:hover{
+			background-color: black;
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="nav">
+			<li><a href="https://www.google.com/search?q=home&sxsrf=AOaemvKSAw0aBvC8NIoKzXAZj1Z9m2nX_Q:1638377977725&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjGr_rKicP0AhWcR_EDHQfcDmYQ_AUoAXoECAIQAw&biw=1164&bih=554&dpr=1.1#imgrc=fTLREFAzp55ajM" target="_blank">Home</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+	<script>
+		// let trainer = {
+		// 	name: "Taha Hassan",
+		// 	age: 20,
+		// 	speciality: "Sprint"
+		// }
+		// // console.log(trainer)
+		// // trainer = trainer.push("Jiu jitsu");
+		// console.log(trainer);
+
+		// let trainer = [name = "Taha Hassan", age = 20, speciality = "Sprint"];
+		let trainer = new Array(name = "Johns", age = 28, speciality = "Hand-to-hand combat");
+		console.log(trainer);
+
+		// Adds an extra item in the array
+		trainer.push("Jiu Jitsu");
+		console.log(trainer);
+
+		// Sorts the array
+		trainer.sort();
+		console.log(trainer);
+	</script>
+</body>
+</html>
